@@ -176,7 +176,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'disk down
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -337,7 +339,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 256824496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 710500862}
+        m_TargetAssemblyTypeName: DiskSliderBar, Assembly-CSharp
+        m_MethodName: MinusDisk
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &256824496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,7 +769,7 @@ GameObject:
   - component: {fileID: 710500863}
   - component: {fileID: 710500862}
   m_Layer: 5
-  m_Name: Image
+  m_Name: DiskSliderBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -792,6 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35b6505ba8126142bbc302e9f47300e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 0}
 --- !u!114 &710500863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,7 +1020,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'disk up
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1223,7 +1240,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1419829246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 710500862}
+        m_TargetAssemblyTypeName: DiskSliderBar, Assembly-CSharp
+        m_MethodName: PlusDisk
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1419829246
 MonoBehaviour:
   m_ObjectHideFlags: 0
