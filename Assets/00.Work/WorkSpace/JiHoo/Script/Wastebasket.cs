@@ -1,16 +1,16 @@
+using _00.Work.WorkSpace.CheolYee._02._Scripts;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Wastebasket : MonoBehaviour
+public class Wastebasket : MonoBehaviour, IDropHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void OnDrop(PointerEventData eventData)
     {
-        
-    }
+        GameObject dropFile = eventData.pointerDrag;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (dropFile != null)
+        {
+            Destroy(dropFile);
+        }
     }
 }
