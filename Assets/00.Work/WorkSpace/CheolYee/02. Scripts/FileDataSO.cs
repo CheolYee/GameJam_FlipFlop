@@ -19,6 +19,16 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         public bool openFile;
         public OpenType openType;
         
+        [Header("Image Files")]
+        public Sprite image;
+        public string title;
+        
+        [Header("Text Files")]
+        public string headerText;
+        public string textTitle;
+        [TextArea]
+        public string content;
+        
         [Header("Delete Trigger")]
         public bool triggersPopup;
         public string triggerName;

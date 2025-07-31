@@ -105,11 +105,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             }
             else
             {
-                /*if (fileData.triggerType == TriggerType.OpenImg && fileData.triggersPopup)
-                {
-                    Debug.Log($"일반 파일 열기(이미지): {fileName.text}");
-                    FileEventManager.HandleTrigger(fileData.triggerType, fileData);
-                }*/
+                PopUpManager.Instance.OpenPopup(fileData);
             }
         }
 

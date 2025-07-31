@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
+  m_Name: ImgPopup
+  m_EditorClassIdentifier: 
+  fileName: CuteCat.Png
+  icon: {fileID: 726873297924465169, guid: bf93b52064dc5d547984e94738fc9603, type: 3}
+  type: 0
+  fileSize: 50
+  changeTime: 0
+  openFile: 1
+  openType: 0
+  image: {fileID: 726873297924465169, guid: bf93b52064dc5d547984e94738fc9603, type: 3}
+  title: CuteCat
+  content: 
+  triggersPopup: 0
+  triggerName: 
+  triggerDescription: 
+  children:
+  - {fileID: 11400000, guid: 0e1bc5a740c7ca346943b27f0eb30838, type: 2}
+  - {fileID: 11400000, guid: c6d1893151ec4c84d9702b0022844074, type: 2}
