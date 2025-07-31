@@ -3,17 +3,13 @@ using UnityEngine.UI;
 
 public class DiskSliderBar : MonoBehaviour
 {
-    private Image img;
+    [SerializeField] private Image redBar;
+    [SerializeField] private Image greenBar;
 
     private float maxDisk = 100f;
     private float disk;
     private float diskAmount = 20f;
     private float diskSafe = 50f;
-
-    private void Awake()
-    {
-        img = GetComponent<Image>();
-    }
 
     private void Start()
     {
@@ -48,6 +44,8 @@ public class DiskSliderBar : MonoBehaviour
             Debug.Log("safe!");
         }
 
-        img.fillAmount = disk / maxDisk;
+        redBar.fillAmount = disk / maxDisk;
+        float greenFill = Mathf.Min(disk, diskSafe) / maxDisk;
+        greenBar.fillAmount = greenFill;
     }
 }
