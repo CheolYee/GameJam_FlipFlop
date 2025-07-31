@@ -233,6 +233,22 @@ PrefabInstance:
       propertyPath: fileData
       value: 
       objectReference: {fileID: 11400000, guid: 6d33c6846037efe46a03e1d02bcb92fb, type: 2}
+    - target: {fileID: 8526191527809603663, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
+      propertyPath: m_text
+      value: filename.exe
+      objectReference: {fileID: 0}
+    - target: {fileID: 8526191527809603663, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
+    - target: {fileID: 8526191527809603663, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5171163999233577873, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
+    - target: {fileID: 8526191527809603663, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
