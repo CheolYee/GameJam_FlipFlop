@@ -60,7 +60,7 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script
             foreach (var result in raycastResult)
             {
                 if (result.gameObject == popupUI || result.gameObject == btn.gameObject ||
-                    popupUI.transform.IsChildOf(result.gameObject.transform))
+                    result.gameObject.transform.IsChildOf(popupUI.transform))
                 {
                     return true;
                 }
