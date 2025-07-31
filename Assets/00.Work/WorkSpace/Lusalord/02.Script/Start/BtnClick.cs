@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace _00.Work.WorkSpace.Lusalord._02.Script
+namespace _00.Work.WorkSpace.Lusalord._02.Script.StartScene
 {
     public class BtnClick : MonoBehaviour
     {

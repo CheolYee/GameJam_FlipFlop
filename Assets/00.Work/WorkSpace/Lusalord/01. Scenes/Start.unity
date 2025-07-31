@@ -369,8 +369,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
-  m_sharedMaterial: {fileID: 1224337157391532903, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
+  m_sharedMaterial: {fileID: -5171163999233577873, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -505,8 +505,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GGM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
-  m_sharedMaterial: {fileID: 1224337157391532903, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
+  m_sharedMaterial: {fileID: -5171163999233577873, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -990,6 +990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveStringName: {fileID: 11400000, guid: 34a84496ab14ac34c8626bddf767268f, type: 2}
   playerNameText: {fileID: 200726983}
+  sceneName: SelectStage
 --- !u!1 &644722048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,7 +1204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5573387315957081490, guid: 28bf26928843981418dc881d0d016636, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6215103813351556468, guid: 28bf26928843981418dc881d0d016636, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1386,7 +1387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1216711626
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1463,6 +1464,7 @@ MonoBehaviour:
   showY: 0
   hideY: -1080
   slideSpeed: 2
+  playerName: {fileID: 200726983}
 --- !u!1 &1230546243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae0762f1a7a78e4f87bb3b16e543483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panelName: 
+  panelName: 
 --- !u!1 &1511191028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,8 +1985,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uB2E4\uC2DC \uC2DC\uC791"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
-  m_sharedMaterial: {fileID: 1224337157391532903, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
+  m_sharedMaterial: {fileID: -5171163999233577873, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2150,8 +2152,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC885\uB8CC\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
-  m_sharedMaterial: {fileID: 1224337157391532903, guid: 114b298e3616f9048a4cf9d50adf2b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
+  m_sharedMaterial: {fileID: -5171163999233577873, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

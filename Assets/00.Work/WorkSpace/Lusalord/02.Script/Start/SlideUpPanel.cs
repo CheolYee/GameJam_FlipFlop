@@ -1,7 +1,10 @@
+using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-namespace _00.Work.WorkSpace.Lusalord._02.Script
+namespace _00.Work.WorkSpace.Lusalord._02.Script.StartScene
 {
     public class SlideUpPanel : MonoBehaviour
     {
@@ -11,6 +14,7 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script
 
         private RectTransform _rectTransform;
         private bool _isOpen; // 현재 상태
+        [SerializeField] private TextMeshProUGUI playerName;
 
         void Awake()
         {
@@ -20,11 +24,16 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script
 
         void Update()
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            var selected = EventSystem.current.currentSelectedGameObject;
+            if (selected != null &&
+                (selected.GetComponent<UnityEngine.UI.InputField>() ||
+                 selected.GetComponent<TMPro.TMP_InputField>()))
+                return;
+            if (Keyboard.current.spaceKey.wasPressedThisFrame) 
             {
-                _isOpen = !_isOpen;
-                StopAllCoroutines();
-                StartCoroutine(SlideTo(_isOpen ? showY : hideY));
+                    _isOpen = !_isOpen;
+                    StopAllCoroutines();
+                    StartCoroutine(SlideTo(_isOpen ? showY : hideY));
             }
         }
 
