@@ -37,6 +37,10 @@ public class DiskSliderBar : MonoBehaviour
         {
             disk = maxDisk;
         }
+        else if (disk < 0)
+        {
+            disk = 0;
+        }
         img.fillAmount = disk / maxDisk;
     }
 }
