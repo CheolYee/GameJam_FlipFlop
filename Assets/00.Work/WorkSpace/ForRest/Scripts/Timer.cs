@@ -12,8 +12,6 @@ public class Timer : MonoSingleton<Timer>
     protected override void Awake()
     {
         base.Awake();
-        if (Instance == this)
-            DontDestroyOnLoad(this);
         timeText = GetComponentInChildren<TMP_Text>();
         SetTimerText();
     }
