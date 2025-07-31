@@ -111,17 +111,14 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
 
         private void OpenFolder()
         {
-            if (_folderPanel == null)
-            {
-                _folderPanel = FolderManager.Instance.CreatePanel(fileData);
-            }
-
-            _folderPanel.transform.SetAsLastSibling();
-            _folderPanel.SetActive(true);
+            FolderManager.Instance.CreatePanel(fileData);
         }
 
         public void DeleteSelf()
         {
+            if (fileData.type == FileType.Folder) return;
+            
+            FileEventManager.HandleTrigger(fileData);
             Destroy(gameObject);
         }
     }

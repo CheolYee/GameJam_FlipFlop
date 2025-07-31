@@ -15,16 +15,16 @@ MonoBehaviour:
   fileName: CuteDog.Png
   icon: {fileID: -4751127751986974064, guid: 9f1b7a0397af4194986b9561c4821524, type: 3}
   type: 0
-  fileSize: 50
-  changeTime: 0
+  fileSize: 20
+  changeTime: 7
   openFile: 1
   openType: 0
   image: {fileID: -4751127751986974064, guid: 9f1b7a0397af4194986b9561c4821524, type: 3}
   title: CuteDog
+  headerText: 
+  textTitle: 
   content: 
   triggersPopup: 0
   triggerName: 
   triggerDescription: 
-  children:
-  - {fileID: 11400000, guid: 0e1bc5a740c7ca346943b27f0eb30838, type: 2}
-  - {fileID: 11400000, guid: c6d1893151ec4c84d9702b0022844074, type: 2}
+  children: []

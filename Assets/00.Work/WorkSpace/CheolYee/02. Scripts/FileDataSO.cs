@@ -31,6 +31,8 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         
         [Header("Delete Trigger")]
         public bool triggersPopup;
+        public TriggerType triggerType;
+        public Sprite popupImage;
         public string triggerName;
         [TextArea]
         public string triggerDescription;

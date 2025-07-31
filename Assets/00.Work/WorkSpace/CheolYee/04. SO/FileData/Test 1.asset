@@ -15,6 +15,16 @@ MonoBehaviour:
   fileName: asdf.png
   icon: {fileID: -275383979, guid: a35a60425b54ada468545ef88cba3cd8, type: 3}
   type: 0
+  fileSize: 30
+  changeTime: 2
+  openFile: 0
+  openType: 0
+  image: {fileID: 0}
+  title: 
+  headerText: 
+  textTitle: 
+  content: 
   triggersPopup: 0
-  fileSize: 50
+  triggerName: 
+  triggerDescription: 
   children: []
