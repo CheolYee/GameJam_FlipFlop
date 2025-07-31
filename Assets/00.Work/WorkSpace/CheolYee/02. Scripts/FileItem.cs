@@ -1,3 +1,4 @@
+using _00.Work.WorkSpace.CheolYee._02._Scripts.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -22,6 +23,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         private float _lastClickTime;
         private const float DoubleClickThreshold = 0.25f; // 초 단위
 
+        private GameObject _folderPanel;
         private void Awake()
         {
             _canvasGroup = GetComponent<CanvasGroup>();
@@ -29,8 +31,15 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             Initialize();
         }
 
-        private void Initialize()
+        public void Initialize()
         {
+            image.sprite = fileData.icon;
+            fileName.text = fileData.fileName;
+        }
+        
+        public void Initialize(FileDataSo data)
+        {
+            fileData = data;
             image.sprite = fileData.icon;
             fileName.text = fileData.fileName;
         }
@@ -102,7 +111,13 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
 
         private void OpenFolder()
         {
-            // 실제 폴더 열기 로직 (폴더 UI 전환 등) 여기에 연결
+            if (_folderPanel == null)
+            {
+                _folderPanel = FolderManager.Instance.CreatePanel(fileData);
+            }
+            
+            _folderPanel.transform.SetAsLastSibling();
+            _folderPanel.SetActive(true);
         }
 
         public void DeleteSelf()

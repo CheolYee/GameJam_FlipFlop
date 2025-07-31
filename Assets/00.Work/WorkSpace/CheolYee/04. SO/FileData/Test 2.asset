@@ -15,8 +15,10 @@ MonoBehaviour:
   fileName: FIle
   icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   type: 5
+  triggerType: 0
   triggersPopup: 0
   fileSize: 50
   children:
   - {fileID: 11400000, guid: 0e1bc5a740c7ca346943b27f0eb30838, type: 2}
   - {fileID: 11400000, guid: c6d1893151ec4c84d9702b0022844074, type: 2}
+  folderPanel: {fileID: 935421624183297771, guid: cbf3dad8b0c0a794eba3e34e75b6318b, type: 3}

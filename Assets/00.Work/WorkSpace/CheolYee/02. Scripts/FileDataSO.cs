@@ -9,6 +9,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         public string fileName;
         public Sprite icon;
         public FileType type;
+        public TriggerType triggerType;
         public bool triggersPopup;
 
         [Header("File Attributes")]
