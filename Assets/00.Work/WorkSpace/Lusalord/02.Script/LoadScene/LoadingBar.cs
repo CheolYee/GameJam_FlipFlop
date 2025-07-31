@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace _00.Work.WorkSpace.Lusalord._02.Script.LoadScene
@@ -46,7 +47,7 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script.LoadScene
             }
 
             scrollbar.value = 1f;
-            Debug.Log("로딩 완료!");
+            SceneManager.LoadScene("asdf");
         }
     }
 }
