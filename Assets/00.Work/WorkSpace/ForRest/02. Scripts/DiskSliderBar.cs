@@ -9,7 +9,7 @@ public class DiskSliderBar : MonoBehaviour
     private float maxDisk = 100f;
     private float disk;
     private float diskAmount = 20f;
-    private float diskSafe = 50f;
+    private float diskSafe = 80f;
 
     private void Start()
     {
