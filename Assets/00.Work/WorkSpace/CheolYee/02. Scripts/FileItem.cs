@@ -105,7 +105,11 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             }
             else
             {
-                Debug.Log($"[무시] 더블클릭은 폴더에만 적용됨: {fileName.text}");
+                /*if (fileData.triggerType == TriggerType.OpenImg && fileData.triggersPopup)
+                {
+                    Debug.Log($"일반 파일 열기(이미지): {fileName.text}");
+                    FileEventManager.HandleTrigger(fileData.triggerType, fileData);
+                }*/
             }
         }
 
