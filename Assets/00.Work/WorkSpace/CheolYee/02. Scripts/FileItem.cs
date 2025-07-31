@@ -36,7 +36,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             image.sprite = fileData.icon;
             fileName.text = fileData.fileName;
         }
-        
+
         public void Initialize(FileDataSo data)
         {
             fileData = data;
@@ -115,7 +115,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             {
                 _folderPanel = FolderManager.Instance.CreatePanel(fileData);
             }
-            
+
             _folderPanel.transform.SetAsLastSibling();
             _folderPanel.SetActive(true);
         }
