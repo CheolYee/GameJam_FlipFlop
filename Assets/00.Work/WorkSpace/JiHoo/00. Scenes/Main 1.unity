@@ -728,10 +728,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 765279666}
     m_Modifications:
-    - target: {fileID: 2732138225568185601, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -4075838227727339953, guid: a4754c801f300d64eb2efc7d03b23f07, type: 3}
     - target: {fileID: 6643566409106399867, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -758,11 +754,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643566409106399867, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 174.7562
+      value: 133.9147
       objectReference: {fileID: 0}
     - target: {fileID: 6643566409106399867, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 174.9387
+      value: 217.1598
       objectReference: {fileID: 0}
     - target: {fileID: 6643566409106399867, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -794,11 +790,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6643566409106399867, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 837.9911
+      value: 836
       objectReference: {fileID: 0}
     - target: {fileID: 6643566409106399867, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -340.11053
+      value: -295
       objectReference: {fileID: 0}
     - target: {fileID: 6643566409106399867, guid: 675f1a4945c8340428957047d9ce05b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1863,7 +1859,7 @@ PrefabInstance:
     - target: {fileID: 8363745550647786985, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
       propertyPath: fileData
       value: 
-      objectReference: {fileID: 11400000, guid: 92a70aaad5d910c48a26057de0a44f58, type: 2}
+      objectReference: {fileID: 11400000, guid: 65b3e4c17bd43aa43b037b9d7d392f8b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
