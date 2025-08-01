@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
+  m_Name: Dream
+  m_EditorClassIdentifier: 
+  fileName: Dream.JPG
+  icon: {fileID: 5225380454210030592, guid: 0d370d869abcf78499a90a8098e4aea9, type: 3}
+  type: 0
+  fileSize: 25
+  changeTime: 7
+  openFile: 0
+  openType: 0
+  image: {fileID: 5379780763234018049, guid: 8b64737f9f0ab274b8188ee5fa311c50, type: 3}
+  title: Dream.JPG
+  adCount: 0
+  shutDownCount: 0
+  headerText: 
+  textTitle: 
+  content: 
+  triggersPopup: 0
+  triggerType: 0
+  popupImage: {fileID: 0}
+  triggerName: 
+  triggerDescription: 
+  mp3Name: 
+  children: []
