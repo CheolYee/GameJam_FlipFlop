@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      samoyed_0: 7531748691071247789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

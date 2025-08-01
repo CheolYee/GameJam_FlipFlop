@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CuteDog_0: 5379780763234018049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
