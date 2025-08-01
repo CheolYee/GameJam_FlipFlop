@@ -10,6 +10,8 @@ namespace _00.Work.Scripts.SO
     {
         private Controls _controls;
 
+        public event Action OnClick;
+        
         private void OnEnable()
         {
             if (_controls == null)
@@ -30,7 +32,7 @@ namespace _00.Work.Scripts.SO
         {
             if (context.performed)
             {
-                SoundManager.Instance.PlaySfx("Click");
+                OnClick?.Invoke();
             }
         }
     }

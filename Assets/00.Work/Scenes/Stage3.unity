@@ -732,6 +732,7 @@ MonoBehaviour:
   imagePopupPrefab: {fileID: 2455302192175409735, guid: e73dfbfda1fd8f149952ca8180895391, type: 3}
   textPopupPrefab: {fileID: 2455302192175409735, guid: 0285004190d1a474d8faafeb1f359db8, type: 3}
   adPopupPrefab: {fileID: 941234273581988529, guid: 49b1dcd9fbb37f94e91cd016f7fa00cc, type: 3}
+  mp3PopupPrefab: {fileID: 2455302192175409735, guid: c806d9704387a874ba4f4c044b0e7ed3, type: 3}
 --- !u!4 &334240119
 Transform:
   m_ObjectHideFlags: 0

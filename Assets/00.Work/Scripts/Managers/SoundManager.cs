@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using _00.Work.Scripts.SO;
 using DG.Tweening;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ namespace _00.Work.Scripts.Managers
     }
     public class SoundManager : MonoSingleton<SoundManager>
     {
+        [SerializeField] private PlayerInputSo playerInputSo;
 
         [Header("Audio Sources")] public AudioSource audioSource;
         public AudioSource sfxSource;
@@ -36,6 +38,11 @@ namespace _00.Work.Scripts.Managers
                 DontDestroyOnLoad(this);
             LoadSettings();
             ApplyVolume();
+        }
+
+        private void Start()
+        {
+            playerInputSo.OnClick += () => PlaySfx("Click");
         }
 
         public void PlayBgm(string soundName)

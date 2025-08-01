@@ -11,6 +11,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
         [SerializeField] private GameObject imagePopupPrefab;
         [SerializeField] private GameObject textPopupPrefab;
         [SerializeField] private GameObject adPopupPrefab;
+        [SerializeField] private GameObject mp3PopupPrefab;
 
         private readonly Dictionary<string, GameObject> _activePopups = new();
         
@@ -33,7 +34,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                     ShutDownManager.Instance.TriggerShutdown(popupData.shutDownCount);
                     break;
                 case OpenType.Mp3:
-                    SoundManager.Instance.PlaySfx(popupData.mp3Name, true);
+                    OpenMp3Popup(popupData);
                     break;
             }
         }
@@ -77,5 +78,19 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             
             adPopup.OnClose += () => _activePopups.Remove(data.fileName);
         }
+        public void OpenMp3Popup(FileDataSo data)
+        {
+            if (_activePopups.ContainsKey(data.fileName)) return;
+            
+            var popup = Instantiate(mp3PopupPrefab, popupParent);
+            
+            var mp3Popup = popup.GetComponent<Mp3Popup>();
+            mp3Popup.Initialize(data.mp3Name);
+            
+            _activePopups[data.fileName] = popup;
+            
+            mp3Popup.OnClose += () => _activePopups.Remove(data.fileName);
+        }
+        
     }
 }
