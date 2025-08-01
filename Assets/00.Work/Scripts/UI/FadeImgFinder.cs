@@ -7,7 +7,7 @@ namespace _00.Work.Scripts.UI
     {
         private void Awake()
         {
-            FadeManager.Instance.fadeImage = gameObject.GetComponent<Image>();
+            FadeManager.Instance.fadeGroup = gameObject.GetComponent<CanvasGroup>();
             FadeManager.Instance.FadeOut();
         }
     }

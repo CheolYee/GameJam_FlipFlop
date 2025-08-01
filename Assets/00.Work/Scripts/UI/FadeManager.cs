@@ -1,52 +1,51 @@
+using System;
 using System.Collections;
 using _00.Work.Scripts.Managers;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 namespace _00.Work.Scripts.UI
 {
     public class FadeManager : MonoSingleton<FadeManager>
     {
         [Header("Fade UI")]
-        public Image fadeImage;
+        public CanvasGroup fadeGroup;
         public float fadeDuration = 1f;
 
-        protected override void Awake()
+        private void Start()
         {
-            base.Awake();
             if (Instance == this)
             {
                 DontDestroyOnLoad(this.gameObject);
             }
         }
 
-        public void FadeOut(System.Action onComplete = null)
+        public void FadeOut(Action onComplete = null)
         {
-            if (fadeImage == null)
+            if (fadeGroup == null)
             {
                 return;
             }
             
-            fadeImage.gameObject.SetActive(true);
-            fadeImage.color = new Color(0, 0, 0, 1);
-            fadeImage.DOFade(0f, fadeDuration).OnComplete(() =>
+            fadeGroup.gameObject.SetActive(true);
+            fadeGroup.alpha = 1;
+            fadeGroup.DOFade(0f, fadeDuration).OnComplete(() =>
             {
-                fadeImage.gameObject.SetActive(false);
+                fadeGroup.gameObject.SetActive(false);
                 onComplete?.Invoke();
             });
         }
 
-        public void FadeIn(System.Action onFadeComplete = null)
+        private void FadeIn(Action onFadeComplete = null)
         {
-            if (fadeImage == null)
+            if (fadeGroup == null)
             {
                 return;
             }
-            fadeImage.gameObject.SetActive(true);
-            fadeImage.color = new Color(0,0,0,0);
-            fadeImage.DOFade(1f, fadeDuration).OnComplete(() =>
+            fadeGroup.gameObject.SetActive(true);
+            fadeGroup.alpha = 0;
+            fadeGroup.DOFade(1f, fadeDuration).OnComplete(() =>
             {
                 onFadeComplete?.Invoke();
                 FadeManager.Instance.FadeOut();
@@ -66,8 +65,8 @@ namespace _00.Work.Scripts.UI
         {
             StartCoroutine(DelayAndFadeToScene(sceneIndex));
         }
-        
-        public IEnumerator DelayAndFadeToScene(int sceneIndex)
+
+        private IEnumerator DelayAndFadeToScene(int sceneIndex)
         {
             yield return null; // 한 프레임 대기: 모든 Awake() 보장
             FadeManager.Instance.FadeToScene(sceneIndex);

@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/00.Work/WorkSpace/Lusalord/01. Scenes/LoadScene.unity
     guid: 83e4874d5c6a58e4785a21ea0d1b59fd
   - enabled: 1
+    path: Assets/00.Work/WorkSpace/CheolYee/00. Scenes/Main.unity
+    guid: 39589554315178f47a161f5c62bda54b
+  - enabled: 1
     path: Assets/00.Work/WorkSpace/Lusalord/01. Scenes/Stage1.unity
     guid: ed00273ec5daf6c488257087e7534382
   - enabled: 1

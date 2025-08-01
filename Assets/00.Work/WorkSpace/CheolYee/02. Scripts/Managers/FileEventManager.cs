@@ -1,5 +1,7 @@
 
+using System;
 using _00.Work.WorkSpace.ForRest._02._Scripts;
+using Random = UnityEngine.Random;
 
 namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 {
@@ -34,7 +36,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                     ImportantEffect(fileData);
                     break;
                 case FileType.Virus:
-                    BadEffect(fileData);
+                    VirusEffect(fileData);
                     break;
             }
         }
@@ -54,9 +56,16 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             DiskSliderBar.Instance.MinusDisk(fileData.fileSize);
         }
 
-        private static void BadEffect(FileDataSo fileData)
+        private static void VirusEffect(FileDataSo fileData)
         {
-            DiskSliderBar.Instance.PlusDisk(fileData.fileSize);
+            if (Random.Range(0, 2) == 0)
+            {
+                ShutDownManager.Instance.TriggerShutdown(fileData.shutDownCount);
+            }
+            else
+            {
+                PopUpManager.Instance.OpenAdPopup(fileData);
+            }
         }
     }
 }

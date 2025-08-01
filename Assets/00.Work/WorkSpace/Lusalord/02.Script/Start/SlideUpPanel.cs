@@ -1,10 +1,9 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-namespace _00.Work.WorkSpace.Lusalord._02.Script.StartScene
+namespace _00.Work.WorkSpace.Lusalord._02.Script.Start
 {
     public class SlideUpPanel : MonoBehaviour
     {
@@ -27,7 +26,7 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script.StartScene
             var selected = EventSystem.current.currentSelectedGameObject;
             if (selected != null &&
                 (selected.GetComponent<UnityEngine.UI.InputField>() ||
-                 selected.GetComponent<TMPro.TMP_InputField>()))
+                 selected.GetComponent<TMP_InputField>()))
                 return;
             if (Keyboard.current.spaceKey.wasPressedThisFrame) 
             {

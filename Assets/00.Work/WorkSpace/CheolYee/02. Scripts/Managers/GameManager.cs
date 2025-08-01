@@ -1,6 +1,7 @@
-using System;
+using _00.Work.Scripts.UI;
 using _00.Work.WorkSpace.ForRest._02._Scripts;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 {
@@ -8,7 +9,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
     {
         [SerializeField] private GameObject gameClearUI;
         [SerializeField] private GameObject gameFailUI;
-
+        
         private void Awake()
         {
             gameClearUI.SetActive(false);
@@ -27,15 +28,24 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                 if (MissionManager.Instance.targetFiles.Count <= 0)
                 {
                     gameClearUI.SetActive(true);
+                    GameEndTrigger clearUI = gameClearUI.GetComponent<GameEndTrigger>();
+                    clearUI.OnAnyKeyPressed += () => FadeManager.Instance.FadeToScene(1);
+                    clearUI.OnRKeyPressed += () => FadeManager.Instance.FadeToScene(SceneManager.GetActiveScene().buildIndex);
                 }
                 else
                 {
                     gameFailUI.SetActive(true);
+                    GameEndTrigger clearUI = gameFailUI.GetComponent<GameEndTrigger>();
+                    clearUI.OnAnyKeyPressed += () => FadeManager.Instance.FadeToScene(1);
+                    clearUI.OnRKeyPressed += () => FadeManager.Instance.FadeToScene(SceneManager.GetActiveScene().buildIndex);
                 }
             }
             else
             {
                 gameFailUI.SetActive(true);
+                GameEndTrigger clearUI = gameFailUI.GetComponent<GameEndTrigger>();
+                clearUI.OnAnyKeyPressed += () => FadeManager.Instance.FadeToScene(1);
+                clearUI.OnRKeyPressed += () => FadeManager.Instance.FadeToScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }

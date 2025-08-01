@@ -1,10 +1,11 @@
+using _00.Work.Scripts.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StageSelect : MonoBehaviour
 {
-    public void StageLoad(GameObject button)
+    public void StageLoad(int num)
     {
-        SceneManager.LoadScene(button.name);
+        FadeManager.Instance.FadeToScene(num);
     }
 }
