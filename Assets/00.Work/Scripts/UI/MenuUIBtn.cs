@@ -1,5 +1,6 @@
 using _00.Work.Scripts.Managers;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace _00.Work.Scripts.UI
@@ -10,8 +11,9 @@ namespace _00.Work.Scripts.UI
         [SerializeField] private Button mainButton;
         public Slider bgmSlider;
         public Slider sfxSlider;
-        
+
         private bool _isPressedEsc;
+        private bool esc = false;
 
         private void Start()
         {
@@ -23,17 +25,28 @@ namespace _00.Work.Scripts.UI
             menu.SetActive(false);
         }
 
+        private void Update()
+        {
+            if (Keyboard.current.escapeKey.isPressed)
+                esc = true;
+
+            if (esc)
+            {
+                menu.SetActive(true);
+                mainButton.gameObject.SetActive(false);
+                Time.timeScale = 0;
+            }
+        }
+
         public void MainMenu()
         {
-            menu.SetActive(true);
-            mainButton.gameObject.SetActive(false);
-            Time.timeScale = 0;
+            esc = true;
         }
-        
+
         public void ContinueButton()
         {
             _isPressedEsc = !_isPressedEsc;
-            
+            esc = false;
             Time.timeScale = 1;
             mainButton.gameObject.SetActive(true);
             menu.SetActive(false);
