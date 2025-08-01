@@ -5,6 +5,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         OpenImg,
         ShowWindow,
         ShowAd,
-        ShutDown
+        ShutDown,
+        Mp3
     }
 }

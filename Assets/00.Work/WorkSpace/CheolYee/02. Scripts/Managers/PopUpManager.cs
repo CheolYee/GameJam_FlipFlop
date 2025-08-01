@@ -32,6 +32,9 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                 case OpenType.ShutDown:
                     ShutDownManager.Instance.TriggerShutdown(popupData.shutDownCount);
                     break;
+                case OpenType.Mp3:
+                    SoundManager.Instance.PlaySfx(popupData.mp3Name, true);
+                    break;
             }
         }
 
