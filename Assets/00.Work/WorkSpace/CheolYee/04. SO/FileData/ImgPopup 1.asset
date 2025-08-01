@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
-  m_Name: Test
+  m_Name: ImgPopup 1
   m_EditorClassIdentifier: 
-  fileName: testFile.exe
-  icon: {fileID: 571157624, guid: 208e90420a68eb94294a501510d454ed, type: 3}
+  fileName: CuteDog.Png
+  icon: {fileID: -4751127751986974064, guid: 9f1b7a0397af4194986b9561c4821524, type: 3}
   type: 0
-  fileSize: 30
-  changeTime: 3
-  openFile: 0
+  fileSize: 20
+  changeTime: 7
+  openFile: 1
   openType: 0
-  image: {fileID: 0}
-  title: 
+  image: {fileID: -4751127751986974064, guid: 9f1b7a0397af4194986b9561c4821524, type: 3}
+  title: CuteDog
   headerText: 
   textTitle: 
   content: 

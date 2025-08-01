@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
-  m_Name: Test
+  m_Name: TextPopup
   m_EditorClassIdentifier: 
-  fileName: testFile.exe
-  icon: {fileID: 571157624, guid: 208e90420a68eb94294a501510d454ed, type: 3}
+  fileName: zipgagosipda.exe
+  icon: {fileID: 21300000, guid: 35f23c48db908de47a926c4bb1831818, type: 3}
   type: 0
-  fileSize: 30
-  changeTime: 3
-  openFile: 0
-  openType: 0
-  image: {fileID: 0}
+  fileSize: 50
+  changeTime: 10
+  openFile: 1
+  openType: 1
+  image: {fileID: -4751127751986974064, guid: 9f1b7a0397af4194986b9561c4821524, type: 3}
   title: 
-  headerText: 
-  textTitle: 
-  content: 
+  headerText: "\uC9D1 \uAC00\uACE0 \uC2F6\uB2E4"
+  textTitle: "\uC9C0\uBCA0\uAC00\uACE0\uC2DC\uD37C\uC694"
+  content: "\uC9D1 \uAC00\uACE0 \uC2F6\uB2E4\uACE0!!!!!!!!!!!!!!!!!!!!"
   triggersPopup: 0
   triggerName: 
   triggerDescription: 

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
-  m_Name: Test
+  m_Name: Folder1 1
   m_EditorClassIdentifier: 
-  fileName: testFile.exe
-  icon: {fileID: 571157624, guid: 208e90420a68eb94294a501510d454ed, type: 3}
-  type: 0
-  fileSize: 30
+  fileName: FIle2
+  icon: {fileID: -273060469431498887, guid: f0c0460fc1672624cbb5f495bf86d12e, type: 3}
+  type: 5
+  fileSize: 10
   changeTime: 3
   openFile: 0
   openType: 0
@@ -27,4 +27,7 @@ MonoBehaviour:
   triggersPopup: 0
   triggerName: 
   triggerDescription: 
-  children: []
+  children:
+  - {fileID: 11400000, guid: 0e1bc5a740c7ca346943b27f0eb30838, type: 2}
+  - {fileID: 11400000, guid: c6d1893151ec4c84d9702b0022844074, type: 2}
+  - {fileID: 11400000, guid: f15a04113f6b39540b5e9c5fa2d29a57, type: 2}

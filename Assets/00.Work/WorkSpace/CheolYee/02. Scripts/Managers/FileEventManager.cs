@@ -1,24 +1,27 @@
+using System.Timers;
 using UnityEngine;
+using Timer = _00.Work.WorkSpace.ForRest._02._Scripts.Timer;
 
 namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 {
     public static class FileEventManager
     {
-        public static void HandleOpener(OpenType openType, FileDataSo fileData)
-        {
-            
-            
-        }
-        
-        public static void HandleTrigger(FileType fileType, FileDataSo fileData)
+        public static void HandleTrigger(FileDataSo fileData)
         {
             if (fileData.triggersPopup)
             {
-                
-                return;   
+                switch (fileData.triggerType)
+                {
+                    case TriggerType.None:
+                        break;
+                    case TriggerType.AdPopup:
+                        break;
+                    case TriggerType.ShutDown:
+                        break;
+                }
             }
             
-            switch (fileType)
+            switch (fileData.type)
             {
                 case FileType.Normal:
                     RandomGoodEffect(fileData);
@@ -44,21 +47,23 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 
         private static void JunkEffect(FileDataSo fileData)
         {
-            Debug.Log($"저장 공간 확보 : {fileData.fileSize}");
+            DiskSliderBar.Instance.MinusDisk(fileData.fileSize);
         }
 
         private static void RandomGoodEffect(FileDataSo fileData)
         {
-            int randomNumber = Random.Range(0, 2);
-
-            Debug.Log(randomNumber == 1 ? $"제한 시간 증가 : {fileData.changeTime}" : $"저장 공간 확보 : {fileData.fileSize}");
+            if (Random.Range(0, 2) == 0)
+                DiskSliderBar.Instance.MinusDisk(fileData.fileSize);
+            else
+                Timer.Instance.AddTimer(fileData.changeTime);
         }
 
         private static void RandomBadEffect(FileDataSo fileData)
         {
-            int randomNumber = Random.Range(0, 2);
-
-            Debug.Log(randomNumber == 1 ? $"제한 시간 감소 : {fileData.changeTime}" : $"저장 공간 감소 : {fileData.fileSize}");
+            if (Random.Range(0, 2) == 0)
+                DiskSliderBar.Instance.PlusDisk(fileData.fileSize);
+            else
+                Timer.Instance.LessTimer(fileData.changeTime);
         }
     }
 }

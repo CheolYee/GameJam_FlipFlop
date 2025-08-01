@@ -2095,10 +2095,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 765279666}
     m_Modifications:
-    - target: {fileID: 2051537782528189374, guid: f3cd493eed4920e46b0c96928fd4cf6f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3286851169479166382, guid: f3cd493eed4920e46b0c96928fd4cf6f, type: 3}
       propertyPath: m_Name
       value: DiskSliderBar

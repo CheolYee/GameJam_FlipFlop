@@ -6,11 +6,10 @@ public class Wastebasket : MonoBehaviour, IDropHandler
 {
     public void OnDrop(PointerEventData eventData)
     {
-        GameObject dropFile = eventData.pointerDrag;
-
-        if (dropFile != null)
+        var fileItem = eventData.pointerDrag?.GetComponent<FileItem>();
+        if (fileItem != null)
         {
-            Destroy(dropFile);
+            fileItem.DeleteSelf();
         }
     }
 }

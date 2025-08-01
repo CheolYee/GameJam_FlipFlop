@@ -105,27 +105,20 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             }
             else
             {
-                /*if (fileData.triggerType == TriggerType.OpenImg && fileData.triggersPopup)
-                {
-                    Debug.Log($"일반 파일 열기(이미지): {fileName.text}");
-                    FileEventManager.HandleTrigger(fileData.triggerType, fileData);
-                }*/
+                PopUpManager.Instance.OpenPopup(fileData);
             }
         }
 
         private void OpenFolder()
         {
-            if (_folderPanel == null)
-            {
-                _folderPanel = FolderManager.Instance.CreatePanel(fileData);
-            }
-
-            _folderPanel.transform.SetAsLastSibling();
-            _folderPanel.SetActive(true);
+            FolderManager.Instance.CreatePanel(fileData);
         }
 
         public void DeleteSelf()
         {
+            if (fileData.type == FileType.Folder) return;
+            
+            FileEventManager.HandleTrigger(fileData);
             Destroy(gameObject);
         }
     }
