@@ -2071,6 +2071,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4689830043425682600, guid: 58d0ed0789632d646b1a7f0fe2c8a93d, type: 3}
+      propertyPath: playerInputSo
+      value: 
+      objectReference: {fileID: 11400000, guid: 8d352fe4a9e173642b608ee182d23497, type: 2}
+    - target: {fileID: 4689830043425682600, guid: 58d0ed0789632d646b1a7f0fe2c8a93d, type: 3}
       propertyPath: sfxClips.Array.size
       value: 4
       objectReference: {fileID: 0}
