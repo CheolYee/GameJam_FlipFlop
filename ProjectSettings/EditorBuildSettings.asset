@@ -17,21 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Work/WorkSpace/Lusalord/01. Scenes/LoadScene.unity
     guid: 83e4874d5c6a58e4785a21ea0d1b59fd
-  - enabled: 1
-    path: Assets/00.Work/Scenes/Stage1.unity
-    guid: f9eb9b98a4e13ae42a6bc1b80902807f
-  - enabled: 1
-    path: Assets/00.Work/Scenes/Stage2.unity
-    guid: c5efdebaf8721a24db9bb604b4893f92
-  - enabled: 1
-    path: Assets/00.Work/Scenes/Stage3.unity
-    guid: 1e401cfe03d801a4fa963298e3fba182
-  - enabled: 1
-    path: Assets/00.Work/Scenes/Stage4.unity
-    guid: 9bb68dafef2771b4c9a5d3b4b16cb374
-  - enabled: 1
-    path: Assets/00.Work/Scenes/Stage5.unity
-    guid: c5a60e967cd5b6145bc76f0d47937236
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
