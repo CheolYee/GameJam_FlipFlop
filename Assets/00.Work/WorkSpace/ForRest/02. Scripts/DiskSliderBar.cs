@@ -6,8 +6,9 @@ public class DiskSliderBar : MonoSingleton<DiskSliderBar>
 {
     [SerializeField] private Image redBar;
     [SerializeField] private Image greenBar;
+    [SerializeField] private RectTransform ComBar;
 
-    [SerializeField] private float maxDisk = 100f;
+    [SerializeField] private float maxDisk;
     [SerializeField] private float diskSafe = 80f;
     private float _disk;
 
