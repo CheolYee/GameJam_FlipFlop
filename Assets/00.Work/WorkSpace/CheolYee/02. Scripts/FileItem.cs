@@ -65,7 +65,14 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
 
             if (_isDragging)
             {
-                _rectTransform.anchoredPosition += eventData.delta / transform.lossyScale.x;
+                if (RectTransformUtility.ScreenPointToWorldPointInRectangle(
+                        _rectTransform,
+                        eventData.position,
+                        eventData.pressEventCamera, // 중요한 포인트!
+                        out var globalMousePos))
+                {
+                    _rectTransform.position = globalMousePos;
+                }
             }
         }
 
@@ -99,7 +106,6 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         {
             if (fileData.type == FileType.Folder)
             {
-                Debug.Log($"[열기] 폴더 열기: {fileName.text}");
                 // 폴더 열기 이벤트 호출
                 OpenFolder();
             }
@@ -119,7 +125,11 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             if (fileData.type == FileType.Folder) return;
             
             FileEventManager.HandleTrigger(fileData);
+            
+            if (fileData.type == FileType.Important) return;
+            
             Destroy(gameObject);
+            MissionManager.Instance.OnFileDeleted(fileData);
         }
     }
 }

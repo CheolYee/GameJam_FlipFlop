@@ -23,6 +23,12 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         public Sprite image;
         public string title;
         
+        [Header("Only AdPopup")]
+        public int adCount;
+        
+        [Header("Only ShutDown")]
+        public float shutDownCount;
+        
         [Header("Text Files")]
         public string headerText;
         public string textTitle;
