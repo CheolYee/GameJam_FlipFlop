@@ -1,51 +1,51 @@
+using _00.Work.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DiskSliderBar : MonoBehaviour
+public class DiskSliderBar : MonoSingleton<DiskSliderBar>
 {
     [SerializeField] private Image redBar;
     [SerializeField] private Image greenBar;
 
-    private float maxDisk = 100f;
-    private float disk;
-    private float diskAmount = 20f;
-    private float diskSafe = 50f;
+    [SerializeField] private float maxDisk = 100f;
+    [SerializeField] private float diskSafe = 80f;
+    private float _disk;
 
     private void Start()
     {
-        disk = maxDisk;
-        SetDiskSlider(disk);
+        _disk = maxDisk;
+        SetDiskSlider(_disk);
     }
 
-    public void PlusDisk()
+    public void PlusDisk(float value)
     {
-        SetDiskSlider(diskAmount);
+        SetDiskSlider(value);
     }
-    public void MinusDisk()
+    public void MinusDisk(float value)
     {
-        SetDiskSlider(-diskAmount);
+        SetDiskSlider(-value);
     }
 
     private void SetDiskSlider(float value)
     {
-        disk += value;
+        _disk += value;
 
-        if (disk > maxDisk)
+        if (_disk > maxDisk)
         {
-            disk = maxDisk;
+            _disk = maxDisk;
         }
-        else if (disk < 0f)
+        else if (_disk < 0f)
         {
-            disk = 0f;
+            _disk = 0f;
         }
 
-        if (disk < diskSafe)
+        if (_disk < diskSafe)
         {
             Debug.Log("safe!");
         }
 
-        redBar.fillAmount = disk / maxDisk;
-        float greenFill = Mathf.Min(disk, diskSafe) / maxDisk;
+        redBar.fillAmount = _disk / maxDisk;
+        float greenFill = Mathf.Min(_disk, diskSafe) / maxDisk;
         greenBar.fillAmount = greenFill;
     }
 }

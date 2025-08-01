@@ -15,6 +15,16 @@ MonoBehaviour:
   fileName: testFile.exe
   icon: {fileID: 571157624, guid: 208e90420a68eb94294a501510d454ed, type: 3}
   type: 0
+  fileSize: 30
+  changeTime: 3
+  openFile: 0
+  openType: 0
+  image: {fileID: 0}
+  title: 
+  headerText: 
+  textTitle: 
+  content: 
   triggersPopup: 0
-  fileSize: 50
+  triggerName: 
+  triggerDescription: 
   children: []

@@ -9,4 +9,11 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         Trap,       // 클릭 시 가짜 팝업 등 기믹 실행
         Folder      // 폴더
     }
+
+    public enum TriggerType
+    {
+        None,
+        AdPopup,
+        ShutDown
+    }
 }
