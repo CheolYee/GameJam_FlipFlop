@@ -6,7 +6,7 @@ public class DiskSliderBar : MonoSingleton<DiskSliderBar>
 {
     [SerializeField] private Image redBar;
     [SerializeField] private Image greenBar;
-    [SerializeField] private RectTransform ComBar;
+    [SerializeField] private RectTransform safeLine;
 
     [SerializeField] private float maxDisk;
     [SerializeField] private float diskSafe = 80f;
@@ -48,5 +48,11 @@ public class DiskSliderBar : MonoSingleton<DiskSliderBar>
         redBar.fillAmount = _disk / maxDisk;
         float greenFill = Mathf.Min(_disk, diskSafe) / maxDisk;
         greenBar.fillAmount = greenFill;
+        SafeBarPosition();
+    }
+
+    private void SafeBarPosition()
+    {
+
     }
 }
