@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 15
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: -5792511334730316588, guid: b0e61309138633a40b400ed8562eec8d, type: 3}
   title: Pig.PNG

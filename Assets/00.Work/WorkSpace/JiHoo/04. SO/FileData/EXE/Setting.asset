@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 60
   changeTime: 0
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 6031185351473203889, guid: 388d4127ad10ae148b34afba2071112a, type: 3}
   title: Setting

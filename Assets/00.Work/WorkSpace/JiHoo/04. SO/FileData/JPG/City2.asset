@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 15
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 4037621421494769097, guid: 60e8c50bb312cfd459dc80e8d2b8e207, type: 3}
   title: City.JPG

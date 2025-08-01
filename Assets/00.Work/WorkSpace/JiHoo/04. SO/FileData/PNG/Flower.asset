@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 10
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 3373568495408583166, guid: 2ac1adac5fd0b044992265404d1e9bb1, type: 3}
   title: Flower.PNG

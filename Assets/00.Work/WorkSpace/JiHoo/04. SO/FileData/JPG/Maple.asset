@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 30
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 3992500226394864303, guid: 248be9a05c6a64142bea090f3ccb961d, type: 3}
   title: Maple.JPG

@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 40
   changeTime: 0
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 3987177194145447881, guid: 3236bf0f0ec3fc24383fd694359966f2, type: 3}
   title: Voice

@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 25
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 1480917699468073914, guid: 1865f864a7e0f024e8c72b0d266b6291, type: 3}
   title: Dog.PNG

@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 25
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: -2569119218762868166, guid: 2033255d350fe5447afb83721476a773, type: 3}
   title: Buliding.JPG

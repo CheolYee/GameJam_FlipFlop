@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 20
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 8502499370245832774, guid: 20354f045abc8b34d8aee89d3edcdb64, type: 3}
   title: reservoir.PNG

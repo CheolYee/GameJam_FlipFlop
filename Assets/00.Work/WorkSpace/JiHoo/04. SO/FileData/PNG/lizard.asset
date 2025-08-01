@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 20
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: -6383312658857005041, guid: c473a2dcd3493194fb71de5d1dfd335b, type: 3}
   title: lizard.PNG

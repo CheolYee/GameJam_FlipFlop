@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 20
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 7531748691071247789, guid: b6edf5ed1b42eec44802e5c7a3be5cb7, type: 3}
   title: Samoyed.PNG

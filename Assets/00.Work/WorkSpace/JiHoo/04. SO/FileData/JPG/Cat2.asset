@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 30
   changeTime: 7
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: 8903766432266672828, guid: fae8265ead908e6498954852a5285575, type: 3}
   title: Cat2.JPG

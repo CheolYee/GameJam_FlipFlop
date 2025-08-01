@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 0
   fileSize: 35
   changeTime: 0
-  openFile: 0
+  openFile: 1
   openType: 0
   image: {fileID: -7232521027535748977, guid: f18f3876570eaec4db66265dabe5b080, type: 3}
   title: Cat.PNG
