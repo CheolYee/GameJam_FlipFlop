@@ -1,78 +1,83 @@
+using System.Collections;
 using _00.Work.Scripts.Managers;
 using DG.Tweening;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DiskSliderBar : MonoSingleton<DiskSliderBar>
+namespace _00.Work.WorkSpace.ForRest._02._Scripts
 {
-    [SerializeField] private Image redBar;
-    [SerializeField] private Image blueBar;
-    [SerializeField] private Image DiskIcon;
-    [SerializeField] private RectTransform DiskIconRec;
-    [SerializeField] private RectTransform safeLine;
-
-    [SerializeField] private float maxDisk;
-    [SerializeField] private float diskSafe = 80f;
-    private float _disk;
-
-    private void Start()
+    public class DiskSliderBar : MonoSingleton<DiskSliderBar>
     {
-        _disk = maxDisk;
-        SetDiskSlider(_disk);
-        SafeBarPosition();
-    }
+        [SerializeField] private Image redBar;
+        [SerializeField] private Image blueBar;
+        [SerializeField] private Image diskIcon;
+        [SerializeField] private RectTransform diskIconRec;
+        [SerializeField] private RectTransform safeLine;
 
-    public void PlusDisk(float value)
-    {
-        SetDiskSlider(value);
-    }
+        [SerializeField] private float maxDisk;
+        [SerializeField] private float diskSafe = 80f;
+        private float _disk;
 
-    public void MinusDisk(float value)
-    {
-        SetDiskSlider(-value);
-        StartCoroutine(DiskIconAnimation());
-    }
+        public bool isSuccess;
 
-    private IEnumerator DiskIconAnimation()
-    {
-        DiskIcon.color = Color.gray;
-        DiskIconRec.DOShakePosition(1f, new Vector3(10f, 0f, 0f), vibrato: 3, fadeOut: true);
-        yield return new WaitForSeconds(1f);
-        DiskIcon.color = Color.white;
-    }
-
-    private void SetDiskSlider(float value)
-    {
-        _disk += value;
-
-        if (_disk > maxDisk)
+        private void Start()
         {
             _disk = maxDisk;
+            SetDiskSlider(_disk);
+            SafeBarPosition();
         }
-        else if (_disk < 0f)
+
+        public void PlusDisk(float value)
         {
-            _disk = 0f;
+            SetDiskSlider(value);
         }
 
-        if (_disk < diskSafe)
+        public void MinusDisk(float value)
         {
-            Debug.Log("safe!");
+            SetDiskSlider(-value);
+            StartCoroutine(DiskIconAnimation());
         }
 
-        redBar.fillAmount = _disk / maxDisk;
-        float greenFill = Mathf.Min(_disk, diskSafe) / maxDisk;
-        blueBar.fillAmount = greenFill;
-    }
+        private IEnumerator DiskIconAnimation()
+        {
+            diskIcon.color = Color.gray;
+            diskIconRec.DOShakePosition(1f, new Vector3(10f, 0f, 0f), vibrato: 3, fadeOut: true);
+            yield return new WaitForSeconds(1f);
+            diskIcon.color = Color.white;
+        }
 
-    private void SafeBarPosition()
-    {
-        RectTransform redRect = redBar.rectTransform;
-        float safeRatio = diskSafe / maxDisk;
-        float localSafeX = (safeRatio - 0.5f) * redRect.rect.width;
+        private void SetDiskSlider(float value)
+        {
+            _disk += value;
 
-        // ·¹µå¹Ù ·ÎÄÃ ±âÁØ À§Ä¡¸¦ ¿ùµåÁÂÇ¥·Î º¯È¯
-        Vector3 worldSafePos = redRect.TransformPoint(new Vector3(localSafeX, 0f, 0f));
-        safeLine.localPosition = safeLine.parent.InverseTransformPoint(worldSafePos);
+            if (_disk > maxDisk)
+            {
+                _disk = maxDisk;
+            }
+            else if (_disk < 0f)
+            {
+                _disk = 0f;
+            }
+
+            if (_disk < diskSafe)
+            {
+                isSuccess = true;
+                TimerManager.Instance.SetTimer(0);
+            }
+
+            redBar.fillAmount = _disk / maxDisk;
+            float greenFill = Mathf.Min(_disk, diskSafe) / maxDisk;
+            blueBar.fillAmount = greenFill;
+        }
+        private void SafeBarPosition()
+        {
+            RectTransform redRect = redBar.rectTransform;
+            float safeRatio = diskSafe / maxDisk;
+            float localSafeX = (safeRatio - 0.5f) * redRect.rect.width;
+
+            // ë ˆë“œë°” ë¡œì»¬ ê¸°ì¤€ ìœ„ì¹˜ë¥¼ ì›”ë“œì¢Œí‘œë¡œ ë³€í™˜
+            Vector3 worldSafePos = redRect.TransformPoint(new Vector3(localSafeX, 0f, 0f));
+            safeLine.localPosition = safeLine.parent.InverseTransformPoint(worldSafePos);
+        }
     }
 }
