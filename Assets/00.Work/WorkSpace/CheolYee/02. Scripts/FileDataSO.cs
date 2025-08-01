@@ -43,6 +43,9 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
         [TextArea]
         public string triggerDescription;
         
+        [Header("Only Mp3")]
+        public string mp3Name;
+        
         [Header("Only for Folder")]
         public List<FileDataSo> children;
     }
