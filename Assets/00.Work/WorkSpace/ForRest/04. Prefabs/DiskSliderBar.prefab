@@ -687,6 +687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redBar: {fileID: 4709120855392797788}
   blueBar: {fileID: 842239987880937270}
+  DiskIcon: {fileID: 3829940441740624396}
+  DiskIconRec: {fileID: 5748034900016017317}
   safeLine: {fileID: 1410111599486672629}
   maxDisk: 200
   diskSafe: 80
