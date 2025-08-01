@@ -46,7 +46,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
                         -canvasSize.x / 2f + panelSize.x / 2f,
                         canvasSize.x / 2f - panelSize.x / 2f);
                     float clampedY = Mathf.Clamp(newAnchoredPos.y,
-                        -canvasSize.y / 2f + panelSize.y / 2f,
+                        -canvasSize.y / 2f + panelSize.y / 2f + 50f,
                         canvasSize.y / 2f - panelSize.y / 2f - 100f);
 
                     _rectTransform.anchoredPosition = new Vector2(clampedX, clampedY);

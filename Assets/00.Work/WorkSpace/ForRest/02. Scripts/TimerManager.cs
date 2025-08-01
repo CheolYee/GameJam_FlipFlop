@@ -31,13 +31,6 @@ namespace _00.Work.WorkSpace.ForRest._02._Scripts
             _countDownCoroutine = StartCoroutine(TimerCoroutine()); //코루틴 시작해서 1초씩 감소
             _isRunning = true; //타이머 작동 중이라고 표시
         }
-
-        public void RestartTimer()
-        {
-            if (_isRunning) return;
-        
-            StartTimer(_remainingSeconds);
-        }
         
         //타이머 멈춤 (어디서든 TimerManager.Instance.StopTimer()로 호출 가능)
         public void StopTimer()
@@ -46,19 +39,6 @@ namespace _00.Work.WorkSpace.ForRest._02._Scripts
         
             StopCoroutine(_countDownCoroutine); //타이머 코루틴 멈춤
             _isRunning = false; //타이머 작동 안하고 있다고 표시
-            Debug.Log("Stop Timer");
-        }
-
-        public void AddTimer(float setTime) // 타이머의 시간을 뺄 수 있는 기능
-        {
-            _remainingSeconds += setTime;
-            UpdateTimerUI();
-        }
-        
-        public void LessTimer(float setTime) // 타이머의 시간을 뺄 수 있는 기능
-        {
-            _remainingSeconds -= setTime;
-            UpdateTimerUI();
         }
         
         public void SetTimer(float setTime) // 타이머의 시간을 설정할 수 있는 기능
@@ -93,9 +73,11 @@ namespace _00.Work.WorkSpace.ForRest._02._Scripts
             OnTimerFinished?.Invoke(); //등록된 이벤트 함수가 있다면 종료 이벤트 실행
         }
 
-        private new void OnDestroy()
+        private void OnDisable()
         {
             StopAllCoroutines();
+            Destroy(gameObject);
         }
+        
     }
 }

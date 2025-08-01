@@ -18,7 +18,6 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script.LoadScene
         {
             if (scrollbar == null)
             {
-                Debug.LogError("Scrollbar가 연결되지 않았습니다.");
                 enabled = false;
                 return;
             }

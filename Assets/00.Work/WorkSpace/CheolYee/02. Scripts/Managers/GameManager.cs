@@ -20,11 +20,6 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             TimerManager.Instance.OnTimerFinished += IsGameClear;
         }
 
-        private void OnDisable()
-        {
-            TimerManager.Instance.OnTimerFinished -= IsGameClear;
-        }
-
         private void IsGameClear()
         {
             if (DiskSliderBar.Instance.isSuccess)
