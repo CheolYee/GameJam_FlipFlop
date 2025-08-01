@@ -75,11 +75,17 @@ namespace _00.Work.Scripts.Managers
             audioSource.DOFade(0, 0.5f).OnComplete(audioSource.Stop);
         }
 
-        public void PlaySfx(string soundName)
+        public void PlaySfx(string soundName, bool isSolo = false)
         {
             var clip = sfxClips.Find(x => x.name == soundName);
             if (clip != null)
             {
+                if (isSolo)
+                {
+                    sfxSource.Stop();
+                    audioSource.clip = clip;
+                    sfxSource.Play();
+                }
                 sfxSource.PlayOneShot(clip);
             }
         }

@@ -10,6 +10,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
         [SerializeField] private Transform popupParent;
         [SerializeField] private GameObject imagePopupPrefab;
         [SerializeField] private GameObject textPopupPrefab;
+        [SerializeField] private GameObject adPopupPrefab;
 
         private readonly Dictionary<string, GameObject> _activePopups = new();
         
@@ -24,6 +25,12 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                     break;
                 case OpenType.ShowWindow:
                     OpenTextPopup(popupData);
+                    break;
+                case OpenType.ShowAd:
+                    OpenAdPopup(popupData);
+                    break;
+                case OpenType.ShutDown:
+                    ShutDownManager.Instance.TriggerShutdown(popupData.shutDownCount);
                     break;
             }
         }
@@ -52,6 +59,20 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             _activePopups[data.fileName] = popup;
             
             messagePopup.OnClose += () => _activePopups.Remove(data.fileName);
+        }
+
+        public void OpenAdPopup(FileDataSo data)
+        {
+            if (_activePopups.ContainsKey(data.fileName)) return;
+            
+            var popup = Instantiate(adPopupPrefab, popupParent);
+            
+            var adPopup = popup.GetComponent<AdPopup>();
+            adPopup.Initialize(data.title, data.adCount);
+            
+            _activePopups[data.fileName] = popup;
+            
+            adPopup.OnClose += () => _activePopups.Remove(data.fileName);
         }
     }
 }

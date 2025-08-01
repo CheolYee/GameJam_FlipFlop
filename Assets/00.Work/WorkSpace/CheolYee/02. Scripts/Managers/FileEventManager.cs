@@ -1,6 +1,3 @@
-using System.Timers;
-using UnityEngine;
-using Timer = _00.Work.WorkSpace.ForRest._02._Scripts.Timer;
 
 namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 {
@@ -15,8 +12,10 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                     case TriggerType.None:
                         break;
                     case TriggerType.AdPopup:
+                        PopUpManager.Instance.OpenAdPopup(fileData);
                         break;
                     case TriggerType.ShutDown:
+                        ImportantEffect(fileData);
                         break;
                 }
             }
@@ -24,25 +23,23 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             switch (fileData.type)
             {
                 case FileType.Normal:
-                    RandomGoodEffect(fileData);
+                    GoodEffect(fileData);
                     break;
                 case FileType.Junk:
                     JunkEffect(fileData);
                     break;
                 case FileType.Important:
-                    RandomImportantEffect(fileData);
+                    ImportantEffect(fileData);
                     break;
                 case FileType.Virus:
-                    RandomBadEffect(fileData);
-                    break;
-                case FileType.Trap:
+                    BadEffect(fileData);
                     break;
             }
         }
 
-        private static void RandomImportantEffect(FileDataSo fileData)
+        private static void ImportantEffect(FileDataSo fileData)
         {
-            
+            ShutDownManager.Instance.TriggerShutdown(fileData.shutDownCount);
         }
 
         private static void JunkEffect(FileDataSo fileData)
@@ -50,20 +47,14 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             DiskSliderBar.Instance.MinusDisk(fileData.fileSize);
         }
 
-        private static void RandomGoodEffect(FileDataSo fileData)
+        private static void GoodEffect(FileDataSo fileData)
         {
-            if (Random.Range(0, 2) == 0)
-                DiskSliderBar.Instance.MinusDisk(fileData.fileSize);
-            else
-                Timer.Instance.AddTimer(fileData.changeTime);
+            DiskSliderBar.Instance.MinusDisk(fileData.fileSize);
         }
 
-        private static void RandomBadEffect(FileDataSo fileData)
+        private static void BadEffect(FileDataSo fileData)
         {
-            if (Random.Range(0, 2) == 0)
-                DiskSliderBar.Instance.PlusDisk(fileData.fileSize);
-            else
-                Timer.Instance.LessTimer(fileData.changeTime);
+            DiskSliderBar.Instance.PlusDisk(fileData.fileSize);
         }
     }
 }

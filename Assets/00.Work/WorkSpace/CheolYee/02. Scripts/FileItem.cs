@@ -119,7 +119,11 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             if (fileData.type == FileType.Folder) return;
             
             FileEventManager.HandleTrigger(fileData);
+            
+            if (fileData.type == FileType.Important) return;
+            
             Destroy(gameObject);
+            MissionManager.Instance.OnFileDeleted(fileData);
         }
     }
 }

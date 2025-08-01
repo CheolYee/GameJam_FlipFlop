@@ -18,6 +18,8 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             // 이미 만들어진 패널이 있으면 다시 보여주기
             if (_openedPanels.TryGetValue(fileData.fileName, out GameObject existingPanel))
             {
+                if (existingPanel.activeSelf) return;
+                
                 existingPanel.transform.position = folderPanelTrm.position;
                 existingPanel.SetActive(true);
                 return;

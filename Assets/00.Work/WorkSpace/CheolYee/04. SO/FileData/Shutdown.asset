@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
+  m_Name: Shutdown
+  m_EditorClassIdentifier: 
+  fileName: ShutdownTest.exe
+  icon: {fileID: 21300000, guid: e233b213b61c5104ebb985281360e014, type: 3}
+  type: 2
+  fileSize: 50
+  changeTime: 10
+  openFile: 1
+  openType: 3
+  image: {fileID: 0}
+  title: 
+  adCount: 0
+  shutDownCount: 3
+  headerText: 
+  textTitle: 
+  content: 
+  triggersPopup: 0
+  triggerType: 0
+  popupImage: {fileID: 0}
+  triggerName: 
+  triggerDescription: 
+  children: []

@@ -14,17 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileName: FIle
   icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  type: 5
+  type: 4
   fileSize: 10
   changeTime: 3
   openFile: 0
   openType: 0
   image: {fileID: 0}
   title: 
+  adCount: 0
+  shutDownCount: 0
   headerText: 
   textTitle: 
   content: 
   triggersPopup: 0
+  triggerType: 0
+  popupImage: {fileID: 0}
   triggerName: 
   triggerDescription: 
   children:

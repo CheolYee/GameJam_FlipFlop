@@ -5,6 +5,8 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
 {
     public class DraggablePanel : MonoBehaviour, IDragHandler, IBeginDragHandler
     {
+        public bool isDragging = true;
+        
         private RectTransform _rectTransform;
         private Canvas _canvas;
         private Vector2 _offset;
@@ -17,6 +19,8 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            if (!isDragging) return;
+            
             transform.parent.SetAsLastSibling();
             
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
@@ -25,6 +29,8 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
 
         public void OnDrag(PointerEventData eventData)
         {
+            if (!isDragging) return;
+            
             if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
                     _canvas.transform as RectTransform, eventData.position, eventData.pressEventCamera, out var localPoint))
             {

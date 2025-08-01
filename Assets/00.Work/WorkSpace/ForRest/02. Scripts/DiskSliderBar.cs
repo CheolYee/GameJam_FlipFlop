@@ -1,4 +1,6 @@
+using System.Threading;
 using _00.Work.Scripts.Managers;
+using _00.Work.WorkSpace.ForRest._02._Scripts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +12,8 @@ public class DiskSliderBar : MonoSingleton<DiskSliderBar>
     [SerializeField] private float maxDisk = 100f;
     [SerializeField] private float diskSafe = 80f;
     private float _disk;
+
+    public bool isSuccess;
 
     private void Start()
     {
@@ -41,7 +45,8 @@ public class DiskSliderBar : MonoSingleton<DiskSliderBar>
 
         if (_disk < diskSafe)
         {
-            Debug.Log("safe!");
+            isSuccess = true;
+            TimerManager.Instance.SetTimer(0);
         }
 
         redBar.fillAmount = _disk / maxDisk;
