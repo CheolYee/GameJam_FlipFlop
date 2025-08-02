@@ -19,7 +19,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
         {
             base.Awake();
             _allTargetCount = targetFiles.Count;
-            succesCount.text = $"꼭 지워야 하는 파일 ({_allTargetCount} / {targetFiles.Count}):";
+            succesCount.text = $"꼭 지워야 하는 파일 ({targetFiles.Count} / {_allTargetCount}):";
         }
 
         public void OnFileDeleted(FileDataSo fileData)

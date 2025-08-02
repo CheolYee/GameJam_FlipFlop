@@ -157,8 +157,10 @@ MonoBehaviour:
   headerBar: {fileID: 8222905475032211829}
   adPopupPrefab: {fileID: 941234273581988529}
   fakeAdSprites:
-  - {fileID: 726873297924465169, guid: bf93b52064dc5d547984e94738fc9603, type: 3}
-  - {fileID: -4751127751986974064, guid: 9f1b7a0397af4194986b9561c4821524, type: 3}
+  - {fileID: -2076907560082294325, guid: 4e6302c7f14b4b640bedaed0928cd031, type: 3}
+  - {fileID: 5081596672381483044, guid: 2eab6d726cd2e204d9aa1a0599933c49, type: 3}
+  - {fileID: -4257406804261313196, guid: b1d4ee836369f3248bf57cd266836c31, type: 3}
+  - {fileID: -5007447437997489849, guid: 1659a6031d3d2c5428a4d33ebe54dcb0, type: 3}
 --- !u!114 &3689452445641536703
 MonoBehaviour:
   m_ObjectHideFlags: 0
