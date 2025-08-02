@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: VIrus 1
   m_EditorClassIdentifier: 
-  fileName: Virus.exe
-  icon: {fileID: -5700898573004420513, guid: facd7c401090f194080cd59c405e4bd6, type: 3}
+  fileName: D@og?.ppg
+  icon: {fileID: 5225380454210030592, guid: 0d370d869abcf78499a90a8098e4aea9, type: 3}
   type: 3
   fileSize: 40
   changeTime: 0
-  openFile: 0
-  openType: 0
+  openFile: 1
+  openType: 2
   image: {fileID: 0}
   title: 
   adCount: 0
