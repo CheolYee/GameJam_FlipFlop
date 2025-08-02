@@ -1,7 +1,5 @@
 
-using System;
 using _00.Work.WorkSpace.ForRest._02._Scripts;
-using Random = UnityEngine.Random;
 
 namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 {
@@ -58,14 +56,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 
         private static void VirusEffect(FileDataSo fileData)
         {
-            if (Random.Range(0, 2) == 0)
-            {
-                ShutDownManager.Instance.TriggerShutdown(fileData.shutDownCount);
-            }
-            else
-            {
-                PopUpManager.Instance.OpenAdPopup(fileData);
-            }
+            DiskSliderBar.Instance.MinusDisk(fileData.fileSize);
         }
     }
 }
