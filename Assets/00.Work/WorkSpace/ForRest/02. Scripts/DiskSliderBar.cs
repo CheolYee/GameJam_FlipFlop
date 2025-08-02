@@ -1,6 +1,6 @@
-using System.Collections;
 using _00.Work.Scripts.Managers;
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 

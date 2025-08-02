@@ -19,7 +19,7 @@ MonoBehaviour:
   changeTime: 7
   openFile: 1
   openType: 0
-  image: {fileID: 5379780763234018049, guid: 8b64737f9f0ab274b8188ee5fa311c50, type: 3}
+  image: {fileID: -4493381971514135050, guid: 2db1b1d90a7207b47a8b6f727b37c67a, type: 3}
   title: Dream.JPG
   adCount: 0
   shutDownCount: 0
