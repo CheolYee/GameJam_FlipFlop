@@ -1,3 +1,4 @@
+using _00.Work.Scripts.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -14,7 +15,7 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script.StartScene
 
         public void RestartClicked()
         {
-            SceneManager.LoadScene(panelName);
+            FadeManager.Instance.FadeToScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

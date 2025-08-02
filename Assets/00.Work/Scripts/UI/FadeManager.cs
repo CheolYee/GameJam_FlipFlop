@@ -19,6 +19,7 @@ namespace _00.Work.Scripts.UI
             {
                 DontDestroyOnLoad(this.gameObject);
             }
+            FadeOut();
         }
 
         public void FadeOut(Action onComplete = null)

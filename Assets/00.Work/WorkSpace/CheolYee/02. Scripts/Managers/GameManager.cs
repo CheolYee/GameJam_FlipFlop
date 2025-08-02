@@ -1,3 +1,4 @@
+using _00.Work.Scripts.Managers;
 using _00.Work.Scripts.UI;
 using _00.Work.WorkSpace.ForRest._02._Scripts;
 using UnityEngine;
@@ -27,6 +28,14 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             {
                 if (MissionManager.Instance.targetFiles.Count <= 0)
                 {
+                    int currentStage = SceneManager.GetActiveScene().buildIndex;
+                    int nextStage = currentStage + 1;
+                    
+                    if (nextStage < SceneManager.sceneCountInBuildSettings)
+                    {
+                        OnStageClear(nextStage);
+                    }
+
                     gameClearUI.SetActive(true);
                     GameEndTrigger clearUI = gameClearUI.GetComponent<GameEndTrigger>();
                     clearUI.OnAnyKeyPressed += () => FadeManager.Instance.FadeToScene(1);
@@ -48,5 +57,17 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                 clearUI.OnRKeyPressed += () => FadeManager.Instance.FadeToScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
+        
+        void OnStageClear(int nextStage)
+        {
+            var data = SaveManager.LoadStageData();
+
+            // 다음 스테이지 해금
+            if (!data.stageProgress.Contains(nextStage))
+                data.stageProgress.Add(nextStage);
+            // 저장
+            SaveManager.SaveStageData(data);
+        }
+
     }
 }
