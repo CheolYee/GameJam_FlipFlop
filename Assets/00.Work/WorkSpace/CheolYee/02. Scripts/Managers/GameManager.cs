@@ -43,6 +43,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
                 }
                 else
                 {
+                    SoundManager.Instance.PlaySfx("Error");
                     gameFailUI.SetActive(true);
                     GameEndTrigger clearUI = gameFailUI.GetComponent<GameEndTrigger>();
                     clearUI.OnAnyKeyPressed += () => FadeManager.Instance.FadeToScene(1);
@@ -51,6 +52,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
             }
             else
             {
+                SoundManager.Instance.PlaySfx("Error");
                 gameFailUI.SetActive(true);
                 GameEndTrigger clearUI = gameFailUI.GetComponent<GameEndTrigger>();
                 clearUI.OnAnyKeyPressed += () => FadeManager.Instance.FadeToScene(1);

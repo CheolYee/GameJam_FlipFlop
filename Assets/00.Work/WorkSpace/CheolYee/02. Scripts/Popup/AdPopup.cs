@@ -37,7 +37,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Popup
             _rectTransform.anchoredPosition = GetRandomPopupPosition(_rectTransform);
             
             Vector2 nativeSize = new Vector2(image.sprite.texture.width, image.sprite.texture.height);
-            Vector2 newSize = nativeSize * 0.8f;
+            Vector2 newSize = nativeSize * 0.4f;
 
             image.rectTransform.sizeDelta = newSize;
             
