@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: Voice
   m_EditorClassIdentifier: 
-  fileName: Voice
+  fileName: Voice.exe
   icon: {fileID: -7778478850643335587, guid: ac3a53de502462147b0e6a1f7f4033db, type: 3}
   type: 0
   fileSize: 40

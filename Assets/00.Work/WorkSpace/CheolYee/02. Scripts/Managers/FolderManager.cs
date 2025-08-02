@@ -27,6 +27,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 
             // 없으면 새로 생성
             GameObject panel = Instantiate(folderPanel, folderPanelTrm);
+            panel.GetComponent<FolderFiles>().Initialize(fileData);
             _openedPanels[fileData.fileName] = panel;
 
             Transform createdPanelTransform = panel.transform.GetChild(1);
