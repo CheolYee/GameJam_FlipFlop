@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB3C4\uB9C8\uBC40 \uC0AC\uC9C4\n\uBC14\uC774\uB7EC\uC2A4 \uD30C\uC77C"
+  m_text: "\uB3C4\uB9C8\uBC40 \uC0AC\uC9C4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
   m_sharedMaterial: {fileID: -5171163999233577873, guid: c9ce9c251acd73e4ea13ea7d20da4da4, type: 2}
@@ -1594,7 +1594,6 @@ MonoBehaviour:
   succesCount: {fileID: 128386118}
   targetFiles:
   - {fileID: 11400000, guid: cceef291f3a4a1a42a85246ab6c43976, type: 2}
-  - {fileID: 11400000, guid: 41b6dd9dad3aabb4496a7944cc3978e1, type: 2}
   forbiddenFiles:
   - {fileID: 11400000, guid: 6b37758ff4d798142909dffe93e2ae76, type: 2}
 --- !u!4 &864890373
@@ -2972,7 +2971,7 @@ PrefabInstance:
     - target: {fileID: 7723135396515628612, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
       propertyPath: fileData
       value: 
-      objectReference: {fileID: 11400000, guid: 6c46bc145d0ef584680e318469d076fd, type: 2}
+      objectReference: {fileID: 11400000, guid: dc6304c9306fc3940990600021d3f16d, type: 2}
     - target: {fileID: 8363745550647786985, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
       propertyPath: fileData
       value: 
@@ -3361,7 +3360,7 @@ PrefabInstance:
     - target: {fileID: 7723135396515628612, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
       propertyPath: fileData
       value: 
-      objectReference: {fileID: 11400000, guid: 77fa6f98abde14a47b11345797ff35e1, type: 2}
+      objectReference: {fileID: 11400000, guid: 6f10a378c582e574bb3d41a232fef915, type: 2}
     - target: {fileID: 8363745550647786985, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
       propertyPath: fileData
       value: 
@@ -3943,7 +3942,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1117515546529591632, guid: f3cd493eed4920e46b0c96928fd4cf6f, type: 3}
       propertyPath: maxDisk
-      value: 225
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 1117515546529591632, guid: f3cd493eed4920e46b0c96928fd4cf6f, type: 3}
       propertyPath: diskSafe
@@ -4548,7 +4547,7 @@ PrefabInstance:
     - target: {fileID: 7723135396515628612, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
       propertyPath: fileData
       value: 
-      objectReference: {fileID: 11400000, guid: 41b6dd9dad3aabb4496a7944cc3978e1, type: 2}
+      objectReference: {fileID: 11400000, guid: 7c3159608717b1a4897769188e708ea1, type: 2}
     - target: {fileID: 8363745550647786985, guid: e179e1fec719b8b4897b548756dfc2b2, type: 3}
       propertyPath: fileData
       value: 
