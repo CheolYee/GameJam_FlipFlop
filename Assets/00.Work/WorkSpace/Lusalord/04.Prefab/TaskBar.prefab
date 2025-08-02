@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 2742801413455945322}
   - component: {fileID: 1841158721014115132}
   - component: {fileID: 3460752913672294484}
+  - component: {fileID: 1743664116374473267}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -212,6 +213,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1743664116374473267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348485643664968970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae0762f1a7a78e4f87bb3b16e543483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelName: 
 --- !u!1 &2536630287194132654
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +749,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 102398770149750587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1743664116374473267}
+        m_TargetAssemblyTypeName: _00.Work.WorkSpace.Lusalord._02.Script.StartScene.PauseClick,
+          Assembly-CSharp
+        m_MethodName: ExitClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7521721376004474757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1064,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7735944574698634440}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1743664116374473267}
+        m_TargetAssemblyTypeName: _00.Work.WorkSpace.Lusalord._02.Script.StartScene.PauseClick,
+          Assembly-CSharp
+        m_MethodName: RestartClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9071164209026276444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1112,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 901.9, y: 20.53}
+  m_AnchoredPosition: {x: 901.9, y: 20.53003}
   m_SizeDelta: {x: 116.19891, y: 42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &554221272090500249

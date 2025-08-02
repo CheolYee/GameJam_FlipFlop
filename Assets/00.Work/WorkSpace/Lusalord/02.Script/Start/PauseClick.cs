@@ -10,7 +10,14 @@ namespace _00.Work.WorkSpace.Lusalord._02.Script.StartScene
         [SerializeField] private string panelName;
         public void ExitClicked()
         {
-            Application.Quit();
+            if (SceneManager.GetActiveScene().buildIndex == 0)
+            {
+                Application.Quit();
+            }
+            else
+            {
+                FadeManager.Instance.FadeToScene(0);
+            }
         }
 
         public void RestartClicked()

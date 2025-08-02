@@ -822,10 +822,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskBar
       objectReference: {fileID: 0}
-    - target: {fileID: 4700403624776932232, guid: 449cdb34799936a46aa1f325adbc35c2, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 20.53003
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
