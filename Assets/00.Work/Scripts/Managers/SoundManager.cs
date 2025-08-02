@@ -43,6 +43,7 @@ namespace _00.Work.Scripts.Managers
         private void Start()
         {
             playerInputSo.OnClick += () => PlaySfx("Click");
+            PlayBgm("MainBgm");
         }
 
         public void PlayBgm(string soundName)

@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
+using _00.Work.Scripts.UI;
 using _00.Work.WorkSpace.Lusalord._02.Script.SO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class Story : MonoBehaviour
 {
@@ -13,7 +11,6 @@ public class Story : MonoBehaviour
     
     [SerializeField] private TextMeshProUGUI storyText;
     
-    [SerializeField] private string sceneName;
 
     private void Start()
     {
@@ -26,7 +23,8 @@ public class Story : MonoBehaviour
         {
             if (num >= script.Length)
             {
-                SceneManager.LoadScene(sceneName);
+                FadeManager.Instance.FadeToScene(0);
+                return;
             }
             storyText.text = script[num].story;
             num++;

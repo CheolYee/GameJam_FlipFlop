@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Work/Scenes/Stage5.unity
     guid: d2948e7495e68c6458f8c363fe2de229
+  - enabled: 1
+    path: Assets/00.Work/WorkSpace/Lusalord/01. Scenes/Story.unity
+    guid: b75849165589a9c4cb272ffa9f92f637
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
