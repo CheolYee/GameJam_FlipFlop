@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e9b27acb72b22468e5a3791e3e17ec, type: 3}
+  m_Name: 1StoryScript
+  m_EditorClassIdentifier: 
+  story: "\uC548\uB155\uD558\uC138\uC694! \uC800\uB294 \uC9C0\uC2DD \uC778\uC5D0\uC11C
+    \uD65C\uB3D9\uD558\uB294 \uD574\uACB0\uC0AC\uC785\uB2C8\uB2E4~!\r\n\uC0AC\uB78C\uB4E4\uC774
+    \"\uC774\uAC70 \uC65C \uC774\uB798\uC694?\" \uB77C\uACE0 \uB9D0\uD558\uBA74 \uC81C\uAC00
+    \uB098\uC11C\uC11C \uACE0\uCCD0\uC8FC\uACE4 \uD55C\uB2F5\uB2C8\uB2E4^^"

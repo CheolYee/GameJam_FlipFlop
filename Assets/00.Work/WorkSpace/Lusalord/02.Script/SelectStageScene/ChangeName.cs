@@ -1,4 +1,4 @@
-using _00.Work.WorkSpace.Lusalord._02.Script.StartScene.SO;
+using _00.Work.WorkSpace.Lusalord._02.Script.SO;
 using TMPro;
 using UnityEngine;
 
