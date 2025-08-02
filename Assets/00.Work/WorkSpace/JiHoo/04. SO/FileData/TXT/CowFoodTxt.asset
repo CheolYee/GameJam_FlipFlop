@@ -20,7 +20,7 @@ MonoBehaviour:
   openFile: 1
   openType: 1
   image: {fileID: 7094887773775264657, guid: c806305c34e4fcb43bc53fdad8fded39, type: 3}
-  title: CowFoodTxt
+  title: Sogalbijjim.txt
   adCount: 0
   shutDownCount: 0
   headerText: Sogalbijjim

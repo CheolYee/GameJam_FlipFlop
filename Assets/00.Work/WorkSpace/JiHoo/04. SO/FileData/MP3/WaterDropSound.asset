@@ -31,5 +31,5 @@ MonoBehaviour:
   popupImage: {fileID: 0}
   triggerName: 
   triggerDescription: 
-  mp3Name: WaterDropSound
+  mp3Name: SoundWD.mp3
   children: []
