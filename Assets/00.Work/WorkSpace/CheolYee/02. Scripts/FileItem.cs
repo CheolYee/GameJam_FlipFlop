@@ -1,3 +1,4 @@
+using _00.Work.Scripts.Managers;
 using _00.Work.WorkSpace.CheolYee._02._Scripts.Managers;
 using TMPro;
 using UnityEngine;
@@ -128,6 +129,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts
             
             if (fileData.type == FileType.Important) return;
             
+            SoundManager.Instance.PlaySfx("Recycle");
             Destroy(gameObject);
             MissionManager.Instance.OnFileDeleted(fileData);
         }

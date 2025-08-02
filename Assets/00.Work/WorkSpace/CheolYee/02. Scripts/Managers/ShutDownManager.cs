@@ -16,6 +16,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Managers
 
         public void TriggerShutdown(float shutdownDuration)
         {
+            SoundManager.Instance.PlaySfx("Error");
             StartCoroutine(ShutdownRoutine(shutdownDuration));
         }
 

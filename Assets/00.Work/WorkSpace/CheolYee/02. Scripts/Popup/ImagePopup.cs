@@ -21,7 +21,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Popup
             
             //원본 이미지의 0.8배후 적용
             Vector2 nativeSize = new Vector2(image.texture.width, image.texture.height);
-            Vector2 newSize = nativeSize * 0.6f;
+            Vector2 newSize = nativeSize * 0.4f;
 
             contentImage.rectTransform.sizeDelta = newSize;
             
