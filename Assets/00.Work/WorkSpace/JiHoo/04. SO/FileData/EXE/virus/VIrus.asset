@@ -17,12 +17,12 @@ MonoBehaviour:
   type: 3
   fileSize: 40
   changeTime: 0
-  openFile: 0
-  openType: 0
+  openFile: 1
+  openType: 3
   image: {fileID: 0}
   title: 
   adCount: 0
-  shutDownCount: 0
+  shutDownCount: 3
   headerText: 
   textTitle: 
   content: 
