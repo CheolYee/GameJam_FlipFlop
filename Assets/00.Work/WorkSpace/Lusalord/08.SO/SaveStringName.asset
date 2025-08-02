@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e28ea27421d8f54cb444173e05be282, type: 3}
   m_Name: SaveStringName
   m_EditorClassIdentifier: 
-  playerName: "sadfasdf\u200B"
+  playerName: "\u200B"
