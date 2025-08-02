@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fileName: Setting
   icon: {fileID: 6073682183734903416, guid: 2b5cfd9738b749342a5313cd06505cdf, type: 3}
-  type: 0
+  type: 2
   fileSize: 60
   changeTime: 0
   openFile: 1
