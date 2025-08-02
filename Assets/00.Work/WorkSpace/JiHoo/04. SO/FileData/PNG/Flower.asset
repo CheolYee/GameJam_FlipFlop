@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: Flower
   m_EditorClassIdentifier: 
-  fileName: Flower.PNG
+  fileName: Art.PNG
   icon: {fileID: 5225380454210030592, guid: 0d370d869abcf78499a90a8098e4aea9, type: 3}
   type: 0
   fileSize: 10
@@ -20,7 +20,7 @@ MonoBehaviour:
   openFile: 1
   openType: 0
   image: {fileID: 3373568495408583166, guid: 2ac1adac5fd0b044992265404d1e9bb1, type: 3}
-  title: Flower.PNG
+  title: Art.PNG
   adCount: 0
   shutDownCount: 0
   headerText: 

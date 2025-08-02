@@ -3942,7 +3942,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1117515546529591632, guid: f3cd493eed4920e46b0c96928fd4cf6f, type: 3}
       propertyPath: maxDisk
-      value: 180
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1117515546529591632, guid: f3cd493eed4920e46b0c96928fd4cf6f, type: 3}
       propertyPath: diskSafe

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
+  m_Name: Folder2
+  m_EditorClassIdentifier: 
+  fileName: SettingFile
+  icon: {fileID: -236274897407094970, guid: 41578466bbd94724085f0349b9e9fe42, type: 3}
+  type: 4
+  fileSize: 10
+  changeTime: 3
+  openFile: 0
+  openType: 0
+  image: {fileID: 0}
+  title: 
+  adCount: 0
+  shutDownCount: 0
+  headerText: 
+  textTitle: 
+  content: 
+  triggersPopup: 0
+  triggerType: 0
+  popupImage: {fileID: 0}
+  triggerName: 
+  triggerDescription: 
+  mp3Name: 
+  children:
+  - {fileID: 11400000, guid: 3f22af70e1e5fed4db8d6a381db762ba, type: 2}
+  - {fileID: 11400000, guid: 0bad8e151363d314bb5aec6d78d98a2a, type: 2}
+  - {fileID: 11400000, guid: 2701163cd02897142b22635296bb5ca7, type: 2}

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _00.Work.WorkSpace.Lusalord._02.Script.StartScene.SO
+namespace _00.Work.WorkSpace.Lusalord._02.Script.SO
 {
     [CreateAssetMenu(fileName = "SaveStringName", menuName = "SO/SaveStringName")]
     public class SaveStringName : ScriptableObject

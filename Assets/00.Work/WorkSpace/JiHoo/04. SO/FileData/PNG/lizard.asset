@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: lizard
   m_EditorClassIdentifier: 
-  fileName: lizard.PNG
+  fileName: Lizard.PNG
   icon: {fileID: 5225380454210030592, guid: 0d370d869abcf78499a90a8098e4aea9, type: 3}
   type: 0
   fileSize: 20
@@ -20,7 +20,7 @@ MonoBehaviour:
   openFile: 1
   openType: 0
   image: {fileID: -6383312658857005041, guid: c473a2dcd3493194fb71de5d1dfd335b, type: 3}
-  title: lizard.PNG
+  title: Lizard.PNG
   adCount: 0
   shutDownCount: 0
   headerText: 

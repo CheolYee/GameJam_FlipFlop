@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: City1
   m_EditorClassIdentifier: 
-  fileName: City1.PNG
+  fileName: Cyan.PNG
   icon: {fileID: 5225380454210030592, guid: 0d370d869abcf78499a90a8098e4aea9, type: 3}
   type: 0
   fileSize: 25
@@ -20,7 +20,7 @@ MonoBehaviour:
   openFile: 1
   openType: 0
   image: {fileID: 1414139173100871430, guid: 4c1a3befd9cdda242a3ac7abee86cee0, type: 3}
-  title: City1.PNG
+  title: Cyan.PNG
   adCount: 0
   shutDownCount: 0
   headerText: 

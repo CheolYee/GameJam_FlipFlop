@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: gameBoster
   m_EditorClassIdentifier: 
-  fileName: GameBoosterX
+  fileName: GameBoosterX.exe
   icon: {fileID: -7964817491911090841, guid: 1c1d5f8654a74514ba37888226825e03, type: 3}
   type: 0
   fileSize: 40
