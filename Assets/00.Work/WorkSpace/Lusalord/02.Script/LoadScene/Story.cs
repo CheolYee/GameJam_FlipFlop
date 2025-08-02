@@ -24,18 +24,14 @@ public class Story : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            storyText.text = script[num].story;
-            num++;
             if (num >= script.Length)
             {
-                StartCoroutine(LoadScene());
+                SceneManager.LoadScene(sceneName);
             }
+            storyText.text = script[num].story;
+            num++;
+            
         }
-    }
-
-    private IEnumerator LoadScene()
-    {
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(sceneName);
+        
     }
 }
