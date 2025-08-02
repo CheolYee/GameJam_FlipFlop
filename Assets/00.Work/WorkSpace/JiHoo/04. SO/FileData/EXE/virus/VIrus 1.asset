@@ -21,7 +21,7 @@ MonoBehaviour:
   openType: 2
   image: {fileID: 0}
   title: 
-  adCount: 0
+  adCount: 2
   shutDownCount: 0
   headerText: 
   textTitle: 

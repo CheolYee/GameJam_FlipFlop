@@ -37,7 +37,7 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Popup
             _rectTransform.anchoredPosition = GetRandomPopupPosition(_rectTransform);
             
             Vector2 nativeSize = new Vector2(image.sprite.texture.width, image.sprite.texture.height);
-            Vector2 newSize = nativeSize * 0.4f;
+            Vector2 newSize = nativeSize * 0.5f;
 
             image.rectTransform.sizeDelta = newSize;
             
@@ -70,8 +70,8 @@ namespace _00.Work.WorkSpace.CheolYee._02._Scripts.Popup
             float popupWidth = popupRect.rect.width;
             float popupHeight = popupRect.rect.height;
 
-            float x = Random.Range(-canvasRect.width / 4 + popupWidth / 4, canvasRect.width / 4 - popupWidth / 5);
-            float y = Random.Range(-canvasRect.height / 4 + popupHeight / 4, canvasRect.height / 4 - popupHeight / 5);
+            float x = Random.Range(-canvasRect.width / 4 + popupWidth / 4, canvasRect.width / 4 - popupWidth / 4);
+            float y = Random.Range(-canvasRect.height / 5 + popupHeight / 5, canvasRect.height / 5 - popupHeight / 5 - 100f);
 
             return new Vector2(x, y);
         }

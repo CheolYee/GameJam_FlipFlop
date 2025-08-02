@@ -22,7 +22,7 @@ MonoBehaviour:
   image: {fileID: 6031185351473203889, guid: 388d4127ad10ae148b34afba2071112a, type: 3}
   title: Setting
   adCount: 0
-  shutDownCount: 0
+  shutDownCount: 2
   headerText: 
   textTitle: 
   content: 

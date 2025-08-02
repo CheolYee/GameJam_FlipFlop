@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
-  m_Name: NVPN
+  m_Name: Stage3 Folder2 1
   m_EditorClassIdentifier: 
-  fileName: NVPN.exe
-  icon: {fileID: 636411963273832488, guid: a3952808a15a03f439e59bb70ebee0d9, type: 3}
-  type: 0
-  fileSize: 50
+  fileName: "\uC7A1\uB2E4\uD55C\uAC70"
+  icon: {fileID: -236274897407094970, guid: 41578466bbd94724085f0349b9e9fe42, type: 3}
+  type: 4
+  fileSize: 0
   changeTime: 0
-  openFile: 1
-  openType: 3
+  openFile: 0
+  openType: 0
   image: {fileID: 0}
   title: 
   adCount: 0
-  shutDownCount: 3
+  shutDownCount: 0
   headerText: 
   textTitle: 
   content: 
@@ -32,4 +32,6 @@ MonoBehaviour:
   triggerName: 
   triggerDescription: 
   mp3Name: 
-  children: []
+  children:
+  - {fileID: 11400000, guid: 574e829fc72d69e4cb80b64a9451b7da, type: 2}
+  - {fileID: 11400000, guid: 2dfcee73daf04c14780da3258c2709ed, type: 2}

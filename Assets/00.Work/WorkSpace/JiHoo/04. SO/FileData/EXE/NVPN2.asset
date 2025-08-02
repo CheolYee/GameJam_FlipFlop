@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
-  m_Name: NVPN
+  m_Name: NVPN2
   m_EditorClassIdentifier: 
-  fileName: NVPN.exe
+  fileName: VPN.exe
   icon: {fileID: 636411963273832488, guid: a3952808a15a03f439e59bb70ebee0d9, type: 3}
   type: 0
   fileSize: 50
   changeTime: 0
   openFile: 1
-  openType: 3
-  image: {fileID: 0}
-  title: 
+  openType: 0
+  image: {fileID: 449915852441253899, guid: ee93481a70c70fa41bc3583ee8440b98, type: 3}
+  title: VPN
   adCount: 0
-  shutDownCount: 3
+  shutDownCount: 0
   headerText: 
   textTitle: 
   content: 
