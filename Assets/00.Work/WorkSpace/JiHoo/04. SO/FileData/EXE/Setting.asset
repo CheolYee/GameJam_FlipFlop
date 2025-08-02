@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: Setting
   m_EditorClassIdentifier: 
-  fileName: Setting
+  fileName: Setting.exe
   icon: {fileID: 6073682183734903416, guid: 2b5cfd9738b749342a5313cd06505cdf, type: 3}
   type: 2
   fileSize: 60

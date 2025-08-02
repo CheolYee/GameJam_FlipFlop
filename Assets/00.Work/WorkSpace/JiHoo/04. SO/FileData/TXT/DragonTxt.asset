@@ -18,15 +18,26 @@ MonoBehaviour:
   fileSize: 10
   changeTime: 7
   openFile: 1
-  openType: 0
+  openType: 1
   image: {fileID: -370780847119192260, guid: ceaaaf24faf49944f9aa995ab97523d2, type: 3}
   title: DragonText
-  headerText: 
-  textTitle: 
-  content: 
+  adCount: 0
+  shutDownCount: 0
+  headerText: Dragon
+  textTitle: "\uD22C\uBA85\uB4DC\uB798\uACE4 \uC81C1\uD654 \uC804\uBB38"
+  content: "\n\n\n\"\uD06C\uC544\uC544\uC544\uC544\"\r\n\uB4DC\uB798\uACE4\uC911\uC5D0\uC11C\uB3C4
+    \uCD5C\uAC15\uC758 \uD22C\uBA85\uB4DC\uB798\uACE4\uC774 \uC6B8\uBD80\uC9D3\uC5C8\uB2E4\r\uD22C\uBA85\uB4DC\uB798\uACE4\uC740
+    \uC878\uB77C\uC9F1\uC384\uC11C \uB4DC\uB798\uACE4\uC911\uC5D0\uC11C \uCD5C\uAC15\uC774\uC5C8\uB2E4\r\uC2E0\uC774\uB098
+    \uB9C8\uC871\uB3C4 \uC774\uACBC\uB530 \uB2E4\uB364\uBCBC\uB3C4 \uC774\uACBC\uB530
+    \uD22C\uBA85\uB4DC\uB798\uACE4\uC740\r\uC0C8\uC0C1\uC5D0\uC11C \uD558\uB098\uC600\uB2E4
+    \uC5B4\uCA0C\uB4E0 \uAC54\uAC00 \uC6B8\uBD80\uC9D3\uC5C8\uB2E4\r\n\"\uC73C\uC545
+    \uC81C\uAE30\uB784 \uB3C4\uB9DD\uAC00\uC790\"\r\n\uBC1C\uB85D\uB4E4\uC774 \uB3C4\uB9DD\uAC14\uB2E4
+    \uD22C\uBA85\uB4DC\uB798\uACE4\uC774 \uC9F1\uC774\uB2E4\r\n\uADF8\uB798\uC11C
+    \uBC1C\uB85D\uB4E4\uC740 \uB3C4\uB9DD\uAC04 \uAC83\uC774\uB2E4\r\n\r\n\uAF10\uC18D"
   triggersPopup: 0
   triggerType: 0
   popupImage: {fileID: 0}
   triggerName: 
   triggerDescription: 
+  mp3Name: 
   children: []

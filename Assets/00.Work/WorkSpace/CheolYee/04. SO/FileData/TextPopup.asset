@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: TextPopup
   m_EditorClassIdentifier: 
-  fileName: zipgagosipda.exe
-  icon: {fileID: 21300000, guid: 35f23c48db908de47a926c4bb1831818, type: 3}
+  fileName: zipgagosipda.txt
+  icon: {fileID: -4472477381709866953, guid: 869a7b6bd77ac704f95db62f945a0fff, type: 3}
   type: 0
   fileSize: 50
   changeTime: 10
@@ -21,10 +21,15 @@ MonoBehaviour:
   openType: 1
   image: {fileID: -4751127751986974064, guid: 9f1b7a0397af4194986b9561c4821524, type: 3}
   title: 
+  adCount: 0
+  shutDownCount: 0
   headerText: "\uC9D1 \uAC00\uACE0 \uC2F6\uB2E4"
   textTitle: "\uC9C0\uBCA0\uAC00\uACE0\uC2DC\uD37C\uC694"
   content: "\uC9D1 \uAC00\uACE0 \uC2F6\uB2E4\uACE0!!!!!!!!!!!!!!!!!!!!"
   triggersPopup: 0
+  triggerType: 0
+  popupImage: {fileID: 0}
   triggerName: 
   triggerDescription: 
+  mp3Name: 
   children: []

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: NVPN
   m_EditorClassIdentifier: 
-  fileName: NVPN
+  fileName: NVPN.exe
   icon: {fileID: 636411963273832488, guid: a3952808a15a03f439e59bb70ebee0d9, type: 3}
   type: 0
   fileSize: 50

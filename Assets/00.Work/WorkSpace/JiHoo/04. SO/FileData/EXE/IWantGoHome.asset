@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837146145bb240a292563afb7add76a3, type: 3}
   m_Name: IWantGoHome
   m_EditorClassIdentifier: 
-  fileName: IWantGoHome
+  fileName: IWantGoHome.exe
   icon: {fileID: -8926226797371739875, guid: 96524b71c4ae38546aaa1769a9e96d82, type: 3}
   type: 0
   fileSize: 35
